@@ -1,0 +1,1 @@
+scp -r swayam@192.168.1.8:/home/swayam/draper-signage/backend D:\Personal\Projects\draper-signage\

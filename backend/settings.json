@@ -1,0 +1,13 @@
+{
+    "player": "MUMSAN44 Signage",
+    "displayDuration": 5,
+    "maxActiveAssets": 3,
+    "audioOutputs": "3.5mm Jack",
+    "dateFormat": "dd-mm-yyyy",
+    "authType": false,
+    "screenOrientation": "Landscape",
+    "splashScreen": false,
+    "debugLogging": true,
+    "assetsBackup": false,
+    "settingsBackup": false
+}

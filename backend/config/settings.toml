@@ -1,0 +1,22 @@
+title = "default settings"
+
+[basic]
+player = ""
+duration = 10
+maxAssets = 5
+audioOut = "default"
+dateFmt = "dd-mm-yyyy"
+auth = false
+orientation = "landscape"
+resolution = "1920x1080"
+splash = true
+debug = false
+
+[backup]
+assetsBk = true
+assetsBkDur = 7
+settingsBk = true
+settingsDur = 14
+
+[version]
+version="0.0.1"

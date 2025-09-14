@@ -1,0 +1,119 @@
+.container {
+    padding-left: 305px;
+    padding-right: 305px;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 42px;
+}
+
+.titleName {
+    color: #2B2B2B;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.normalButton {
+    width: 175px;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #6D3C41;
+    font-family: "Poppins";
+    color: #F5F3EC;
+}
+
+.itemContainer {
+    height: fit-content;
+    border-radius: 15px;
+    padding: 20px 0 28px 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    background-color: #D8B16E40;
+    border-left: 15px solid #585D47;
+    font-family: "Poppins";
+}
+
+.customInput {
+    all: unset;
+    width: 412px;
+    height: 42px;
+    padding-left: 12px;
+
+    color: #2B2B2B;
+    background-color: #C1A78C80;
+    border: #2B2B2B40 1px solid;
+    border-radius: 5px;
+}
+
+.customInput::placeholder {
+    padding-left: 12px;
+}
+
+.customInputSmall {
+    all: unset;
+    width: 200px;
+    height: 42px;
+    padding-left: 12px;
+
+    color: #2B2B2B;
+    background-color: #C1A78C80;
+    border: #2B2B2B40 1px solid;
+    border-radius: 5px;
+}
+
+.customInputSmall::placeholder {
+    padding-left: 12px;
+}
+
+.customSelect {
+    width: 412px;
+    height: 42px;
+    padding-left: 12px;
+
+    font-family: "Poppins";
+    font-weight: 500;
+
+    color: #2B2B2B;
+    background-color: #C1A78C80;
+    border: #2B2B2B40 1px solid;
+    border-radius: 5px;
+}
+
+.mediumButton {
+    cursor: pointer;
+    width: 145px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins";
+    color: #F5F3EC;
+}
+
+.smallButton {
+    cursor: pointer;
+    width: 115px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins";
+    color: #F5F3EC;
+}

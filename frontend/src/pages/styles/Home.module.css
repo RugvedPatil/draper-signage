@@ -1,0 +1,131 @@
+body {
+    background-color: #F5F3EC;
+}
+
+.container {
+    padding-left: 305px;
+    padding-right: 305px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 42px;
+}
+
+.titleName {
+    color: #2B2B2B;
+    font-family: "PJ Sans";
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.normalButton {
+    width: 175px;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #585D47;
+    font-family: "Poppins";
+    color: #F5F3EC;
+}
+
+.assetsContainer {
+    height: 322px;
+    border-radius: 15px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #D8B16E40;
+    border-left: 15px solid #585D47;
+}
+
+.assetsContainerTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Poppins";
+    font-size: 28px;
+    font-weight: 600;
+    color: #2B2B2B;
+}
+
+.assetsContainerSearchInput {
+    width: 325px;
+    height: 50px;
+    border-radius: 20px;
+    border: solid 3px #2B2B2B40;
+    background-color: #C1A78C80;
+    color: #2B2B2B;
+
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.assetsContainerSearchInput::placeholder {
+    padding-left: 15px;
+    color: #2B2B2B;
+}
+
+.tableContainer {
+    width: 100%;
+    height: fit-content;
+    color: #2B2B2B;
+}
+
+.tableContainer,
+tbody {
+    border-collapse: separate;
+    border-spacing: 0 1em;
+}
+
+tr {
+    height: 32px;
+    padding-top: 14px;
+}
+
+th {
+    height: fit-content;
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 14px;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+td {
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.tableTitles {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+}
+
+.assetsOptionContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.assetsOptions {
+    cursor: pointer;
+}

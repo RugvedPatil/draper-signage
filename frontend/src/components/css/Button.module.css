@@ -1,0 +1,19 @@
+.container {
+    cursor: pointer !important;
+    width: 175px;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #6D3C41;
+    font-family: "Poppins";
+    color: #F5F3EC;
+}
+
+.title {
+    margin: 0;
+    width: fit-content;
+    font-weight: 500;
+}

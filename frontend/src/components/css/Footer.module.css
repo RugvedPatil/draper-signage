@@ -1,0 +1,23 @@
+.container {
+    padding-left: 305px;
+    padding-right: 305px;
+    padding-top: 84px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: 500;
+    color: #2B2B2B;
+}
+
+.documentation {
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+    font-weight: 600;
+}

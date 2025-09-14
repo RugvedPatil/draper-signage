@@ -1,0 +1,23 @@
+.container {
+    height: fit-content;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: "Poppins";
+}
+
+.selectMenu {
+    width: 412px;
+    height: 42px;
+    padding-left: 12px;
+
+    font-family: "Poppins";
+    font-weight: 500;
+
+    color: #2B2B2B;
+    background-color: #C1A78C80;
+    border: #2B2B2B40 1px solid;
+    border-radius: 5px;
+}
