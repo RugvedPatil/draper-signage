@@ -14,6 +14,32 @@ import { logo } from "../assets/imports"
 
 function Home() {
     const [assetsPopup, setAssetsPopup] = createSignal(false);
+    const activeAssets = [
+        {
+            "name": "Default Image",
+            "duration": 10,
+            "resolution": "1920x1080",
+            "uploadOn": "16/07/2025 00:00:00",
+            "isActive": 1,
+            "type": 100
+        },
+        {
+            "name": "Ganesh Chaturthi 2025",
+            "duration": 10,
+            "resolution": "1920x1080",
+            "uploadOn": "17/07/2025 00:00:00",
+            "isActive": 1,
+            "type": 100
+        },
+        {
+            "name": "Swayam Showcase",
+            "duration": 60,
+            "resolution": "1920x1080",
+            "uploadOn": "20/07/2025 00:00:00",
+            "isActive": 1,
+            "type": 101
+        }
+    ]
     function uploadFile() {
         let formData = new FormData();
         let imageFile = document.getElementById("upload-assests-holder").files[0]
@@ -30,17 +56,17 @@ function Home() {
     }
 
     function renderAssetsList(data) {
-        data.map((asset) => {
+        return data.toReversed().map((asset) => {
             return (
                 <tr>
                     <td>
                         <div class={styles.tableTitles}>
                             <img src={dragIcon} alt="dragplate-icon"></img>
-                            <img src={imageIcon} alt="assets-type-icon"></img>
+                            <img src={asset.type === 100 ? imageIcon : videoIcon} alt="assets-type-icon"></img>
                             <p style={{ margin: 0 }}>{asset.name}</p>
                         </div>
                     </td>
-                    <td>{asset.duration}</td>
+                    <td>{asset.duration}sec</td>
                     <td>{asset.resolution}</td>
                     <td>{asset.uploadOn}</td>
                     <td>
@@ -87,50 +113,9 @@ function Home() {
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>
-                                    <div class={styles.tableTitles}>
-                                        <img src={dragIcon} alt="dragplate-icon"></img>
-                                        <img src={imageIcon} alt="assets-type-icon"></img>
-                                        <p style={{ margin: 0 }}>Ganesh Charthuti 2025</p>
-                                    </div>
-                                </td>
-                                <td>10Sec</td>
-                                <td>1080p</td>
-                                <td>16/07/2025 00:00:00</td>
-                                <td>
-                                    <ToggleButton checked={true} />
-                                </td>
-                                <td>
-                                    <div class={styles.assetsOptionContainer}>
-                                        <img class={styles.assetsOptions} src={downloadFileIcon} alt="dragplate-icon"></img>
-                                        <img class={styles.assetsOptions} src={deleteFileIcon} alt="assets-type-icon"></img>
-                                        <img class={styles.assetsOptions} src={editFileIcon} alt="assets-type-icon"></img>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class={styles.tableTitles}>
-                                        <img src={dragIcon} alt="dragplate-icon"></img>
-                                        <img src={imageIcon} alt="assets-type-icon"></img>
-                                        <p style={{ margin: 0 }}>Default Image</p>
-                                    </div>
-                                </td>
-                                <td>10Sec</td>
-                                <td>1080p</td>
-                                <td>16/07/2025 00:00:00</td>
-                                <td>
-                                    <ToggleButton checked={true} />
-                                </td>
-                                <td>
-                                    <div class={styles.assetsOptionContainer}>
-                                        <img class={styles.assetsOptions} src={downloadFileIcon} alt="dragplate-icon"></img>
-                                        <img class={styles.assetsOptions} src={deleteFileIcon} alt="assets-type-icon"></img>
-                                        <img class={styles.assetsOptions} src={editFileIcon} alt="assets-type-icon"></img>
-                                    </div>
-                                </td>
-                            </tr>
+                            {
+                                renderAssetsList(activeAssets)
+                            }
                         </tbody>
                     </table>
 

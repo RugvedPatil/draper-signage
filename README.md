@@ -232,7 +232,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- 📖 [Documentation](https://draper-signage.devRugvedPatil
+- 📖 **Documentation Comming Soon**
 - 🐛 [Issue Tracker](https://github.com/RugvedPatil/draper-signage/issues)
 
 ---
